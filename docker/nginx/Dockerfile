@@ -1,15 +1,5 @@
-# Base on offical NGINX Alpine image
-FROM nginx:alpine
+FROM nginx:1.18-alpine
 
-# Remove any existing config files
-RUN rm /etc/nginx/conf.d/*
+COPY ./docker/nginx/default.conf /etc/nginx/conf.d/default.conf
 
-# Copy config files
-# *.conf files in conf.d/ dir get included in main config
-COPY ./*.conf /etc/nginx/conf.d/
-
-# Expose the listening port
-EXPOSE 80
-
-# Launch NGINX
-CMD [ "nginx", "-g", "daemon off;" ]
+CMD ["nginx", "-g", "daemon off;"]

@@ -1,0 +1,12 @@
+.tab {
+  padding: 0.9rem 2rem 0.9rem 1rem;
+  cursor: pointer;
+}
+
+.tab:hover:not(.tab--active) {
+  background-color: var(--fe-palette-background-hover-primary);
+}
+
+.tab--active {
+  background-color: var(--fe-palette-background-secondary);
+}

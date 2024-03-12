@@ -1,0 +1,11 @@
+.hr {
+  height: 0.0625rem;
+}
+
+.hr--variant--primary {
+  background: var(--fe-palette-border-primary);
+}
+
+.hr--variant--secondary {
+  background: var(--fe-palette-border-secondary);
+}

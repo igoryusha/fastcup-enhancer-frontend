@@ -1,0 +1,20 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  height: 100%;
+}
+
+.tabs-holder {
+  height: 100%;
+  padding: 0.2rem 0;
+  border-right: 0.0625rem solid var(--fe-palette-border-primary);
+}
+
+.section {
+  width: 100%;
+}

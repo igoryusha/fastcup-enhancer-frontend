@@ -1,0 +1,26 @@
+.section {
+  display: flex;
+}
+
+.section-title {
+  margin: 1.125rem 0 0 1rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.item--link:hover,
+.item--control:hover {
+  background: var(--fe-palette-background-hover-primary);
+}
+
+.link-icon {
+  color: var(--fe-palette-text-color-secondary);
+  width: 1rem;
+  height: 1rem;
+}

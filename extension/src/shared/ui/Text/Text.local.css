@@ -1,0 +1,19 @@
+.text--size--m {
+  font-size: 0.875rem;
+}
+
+.text--size--l {
+  font-size: 1rem;
+}
+
+.text--color--primary {
+  color: var(--fe-palette-text-color-primary);
+}
+
+.text--color--secondary {
+  color: var(--fe-palette-text-color-secondary);
+}
+
+.text--weight--bold {
+  font-weight: bold;
+}

@@ -1,34 +1,33 @@
 version: '3'
 
 services:
-  nginx:
-    build:
-      context: ./nginx
-      dockerfile: ./Dockerfile
-    ports:
-      - 80:80
-
-  # frontend:
+  # nginx:
   #   build:
-  #     context: ./client
+  #     context: ./nginx
   #     dockerfile: ./Dockerfile
-  #   volumes:
-  #     - ./client/:/client
-  #     - /client/node_modules
-  #   image: fastcup-chrome-extension-frontend
-  #   container_name: fastcup-chrome-extension-frontend
-  #   restart: always
+  #   ports:
+  #     - 80:80
 
-  server:
+  extension:
     build:
-      context: ./server
-      dockerfile: ./Dockerfile
+      context: ./extension
+      dockerfile: ./../docker/extension/dev.Dockerfile
     volumes:
-      - ./server/:/server
-      - /server/node_modules
-    image: fastcup-chrome-extension-server
-    container_name: fastcup-chrome-extension-server
+      - ./extension/:/var/www/extension
+      - /var/www/extension/node_modules
+    image: fastcup-enhancer-frontend
+    container_name: fastcup-enhancer-frontend
+    restart: always
+
+  fastcup-enhancer-nestjs:
+    build:
+      context: ./nestjs
+      dockerfile: ./../docker/nestjs/dev.Dockerfile
+    volumes:
+      - ./nestjs/:/var/www/nestjs
+      - /var/www/nestjs/node_modules
+    image: fastcup-enhancer-nestjs
+    container_name: fastcup-enhancer-nestjs
     ports:
-      - "3000:3000"
-      # - "9229:9229"
+      - 3000:3000
     restart: always
