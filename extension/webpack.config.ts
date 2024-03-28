@@ -19,7 +19,7 @@ const config: webpack.Configuration = {
   entry: {
     content: './src/content/index.tsx',
     popup: './src/popup/index.tsx',
-    background: './src/background/index.ts',
+    // background: './src/background/index.ts',
   },
 
   output: {
