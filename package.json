@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "watch-dev": "cross-env NODE_ENV=development webpack --watch",
-    "watch-tp": "cross-env NODE_ENV=development webpack --watch",
+    "watch-tp": "cross-env NODE_ENV=test-production webpack --watch",
     "build": "cross-env NODE_ENV=production webpack"
   },
   "browserslist": [
