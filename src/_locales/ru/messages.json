@@ -1,0 +1,50 @@
+{
+  "igor_nerusin": {
+    "message": "Игорь Нерусин"
+  },
+  "telegram": {
+    "message": "Telegram"
+  },
+  "player_does_not_exist": {
+    "message": "У игрока нет аккаунта на Faceit"
+  },
+  "ooops_text": {
+    "message": "Упс! Что-то пошло не так..."
+  },
+  "loading": {
+    "message": "Загрузка"
+  },
+  "general_tab_title": {
+    "message": "Общее"
+  },
+  "general_tab_about_team": {
+    "message": "Данное расширение разрабатывается независимой командой в лице одного человека 😀."
+  },
+  "general_tab_if_you_need_more_1": {
+    "message": "Если вам не хватает функционала или вы хотите что-то улучшить, свяжитесь со мной по"
+  },
+  "general_tab_if_you_need_more_2": {
+    "message": "почте"
+  },
+  "general_tab_if_you_need_more_3": {
+    "message": "или в"
+  },
+  "about_tab_title": {
+    "message": "О расширении"
+  },
+  "about_tab_version": {
+    "message": "Версия"
+  },
+  "about_tab_source_code": {
+    "message": "Исходники расширения"
+  },
+  "about_tab_team": {
+    "message": "Команда"
+  },
+  "about_tab_website": {
+    "message": "Веб-сайт"
+  },
+  "match_page_no_faceit": {
+    "message": "Без Faceit"
+  }
+}

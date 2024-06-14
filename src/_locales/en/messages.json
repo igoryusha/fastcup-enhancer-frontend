@@ -1,0 +1,50 @@
+{
+  "igor_nerusin": {
+    "message": "Igor Nerusin"
+  },
+  "telegram": {
+    "message": "Telegram"
+  },
+  "player_does_not_exist": {
+    "message": "Player does not exist on Faceit"
+  },
+  "ooops_text": {
+    "message": "Ooops! Something went wrong..."
+  },
+  "loading": {
+    "message": "Loading"
+  },
+  "general_tab_title": {
+    "message": "General"
+  },
+  "general_tab_about_team": {
+    "message": "This extension is beeing developed by an independent development team of 1 person 😀."
+  },
+  "general_tab_if_you_need_more_1": {
+    "message": "If you need more functionality, or you want something to be better contact me by"
+  },
+  "general_tab_if_you_need_more_2": {
+    "message": "email"
+  },
+  "general_tab_if_you_need_more_3": {
+    "message": "or"
+  },
+  "about_tab_title": {
+    "message": "About"
+  },
+  "about_tab_version": {
+    "message": "Version"
+  },
+  "about_tab_source_code": {
+    "message": "Source code"
+  },
+  "about_tab_team": {
+    "message": "Team"
+  },
+  "about_tab_website": {
+    "message": "Website"
+  },
+  "match_page_no_faceit": {
+    "message": "No Faceit"
+  }
+}

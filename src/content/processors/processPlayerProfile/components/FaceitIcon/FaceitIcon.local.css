@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.right-content {
+  line-height: 0;
+}

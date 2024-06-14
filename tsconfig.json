@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+
+    "strict": true,
+
+    "sourceMap": true,
+    "importHelpers": true,
+
+    "lib": ["dom"],
+    "target": "es5",
+
+    "moduleResolution": "node",
+
+    "jsx": "react-jsx",
+
+    "paths": {
+      "@public/*": ["./public/*"],
+      "@shared/*": ["./src/shared/*"],
+      "@content/*": ["./src/content/*"],
+      "@popup/*": ["./src/popup/*"],
+      "@/*": ["./src/*"]
+    }
+  },
+
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/declaration.d.ts",
+    "src/react.d.ts"
+  ],
+
+  "exclude": ["node_modules", "**/node_modules/*", "dist"]
+}

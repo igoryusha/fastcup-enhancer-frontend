@@ -1,0 +1,190 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --fe-color-white: #ffffff;
+  --fe-color-chinese-black: #171717;
+  --fe-color-anti-flash-white: #f1f1f1;
+  --fe-color-cultured: #f5f5f5;
+  --fe-color-silver-foil: #b0b0b0;
+  --fe-color-davy-s-grey: #585858;
+  --fe-color-charleston-green: #2d2d2d;
+  --fe-color-spanish-gray: #999b9d;
+  --fe-color-raisin-black: #262626;
+  --fe-color-arsenic: #3f3f42;
+
+  --fe-palette-background-primary: var(--fe-color-white);
+  --fe-palette-background-secondary: var(--fe-color-cultured);
+
+  --fe-palette-background-hover-primary: rgba(0, 0, 0, 0.04);
+
+  --fe-palette-border-primary: var(--fe-color-raisin-black);
+  --fe-palette-border-secondary: var(--fe-color-raisin-black);
+
+  --fe-palette-text-color-primary: var(--fe-color-chinese-black);
+  --fe-palette-text-color-secondary: var(--fe-color-silver-foil);
+
+  font-family: 'Inter', sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fe-palette-background-primary: var(--fe-color-chinese-black);
+    --fe-palette-background-secondary: var(--fe-color-arsenic);
+
+    --fe-palette-background-hover-primary: rgba(255, 255, 255, 0.1);
+
+    --fe-palette-border-primary: var(--fe-color-raisin-black);
+    --fe-palette-border-secondary: var(--fe-color-raisin-black);
+
+    --fe-palette-text-color-primary: var(--fe-color-anti-flash-white);
+    --fe-palette-text-color-secondary: var(--fe-color-spanish-gray);
+  }
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+hr,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  width: 680px;
+  height: 550px;
+
+  line-height: 1.5;
+
+  background-color: var(--fe-palette-background-primary);
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#root {
+  height: 100%;
+}

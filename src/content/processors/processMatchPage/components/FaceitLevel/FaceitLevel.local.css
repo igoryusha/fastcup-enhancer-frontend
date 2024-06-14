@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.level-icon {
+  width: 100%;
+  max-width: 48px;
+}
+
+.nickname {
+  overflow: hidden;
+
+  display: block;
+  width: 100%;
+
+  font-size: 14px;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rotate {
+  animation: rotate infinite ease-in-out 2s;
+  transform-origin: center;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

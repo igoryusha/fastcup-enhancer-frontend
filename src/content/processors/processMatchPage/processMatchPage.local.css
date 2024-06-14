@@ -1,0 +1,8 @@
+.external-holder {
+  flex-direction: column;
+}
+
+.faceit-level-root {
+  margin: 12px auto 0;
+  overflow: hidden;
+}

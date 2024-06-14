@@ -9,25 +9,10 @@ services:
   #     - 80:80
 
   extension:
-    build:
-      context: ./extension
-      dockerfile: ./../docker/extension/dev.Dockerfile
+    tty: true
+    image: node:20-alpine3.16
     volumes:
-      - ./extension/:/var/www/extension
+      - .:/var/www/extension
       - /var/www/extension/node_modules
-    image: fastcup-enhancer-frontend
     container_name: fastcup-enhancer-frontend
-    restart: always
-
-  fastcup-enhancer-nestjs:
-    build:
-      context: ./nestjs
-      dockerfile: ./../docker/nestjs/dev.Dockerfile
-    volumes:
-      - ./nestjs/:/var/www/nestjs
-      - /var/www/nestjs/node_modules
-    image: fastcup-enhancer-nestjs
-    container_name: fastcup-enhancer-nestjs
-    ports:
-      - 3000:3000
     restart: always
