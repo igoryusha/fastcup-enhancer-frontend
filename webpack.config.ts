@@ -98,7 +98,7 @@ const config: webpack.Configuration = {
     }),
 
     new ZipPlugin({
-      filename: 'dist.zip',
+      filename: 'archive.zip',
     }) as any,
   ],
 
